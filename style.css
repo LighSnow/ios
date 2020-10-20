@@ -46,6 +46,12 @@ dd {
   margin: 0;
 }
 
+html {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: "SFProDisplay", sans-serif;
   min-height: 100vh;
@@ -340,6 +346,7 @@ a {
 .whats-new__company .blue {
   font-size: 15px;
   line-height: 20px;
+  color: #0080FF;
 }
 
 .whats-new__company span {
@@ -347,6 +354,17 @@ a {
   line-height: 15px;
   color: #8E8E93;
 }
+
+.whats-new__company .arrow {
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #9B9B9B;
+}
+
 
 .rating {
   border-bottom: 1px solid #E6E7E9;
@@ -545,12 +563,23 @@ a {
   border-bottom: 1px solid #E6E7E9;
 }
 
+.information__row span {
+  color: #000000;
+}
+
 .information__row .gray {
   color: #8E8E93;
 }
 
 .information__row .blue {
   color: #007AFF;
+}
+
+.information__row .arrow {
+  width: 9px;
+  height: 9px;
+  transform: rotate(90deg);
+  margin: 0px 0px 0px 20px;
 }
 
 .safari {
